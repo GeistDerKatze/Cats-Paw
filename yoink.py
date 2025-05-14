@@ -21,5 +21,3 @@ def get_first_google_result(query: str) -> dict:
         return {"error": "No results found."}
 
     return organic[0]
-
-print(get_first_google_result("bao the whale"))

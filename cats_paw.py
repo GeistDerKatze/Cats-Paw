@@ -15,11 +15,13 @@ def homepage():
 
         data = get_first_google_result(search_query)
         # Save JSON temporarily
-        filepath = "{result}.json"
+        filepath = f"{search_query}.json"
         with open(filepath, "w") as f:
             json.dump(data, f, indent=2)
 
         return send_file(filepath, as_attachment=True)
 
+"""
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=4221, debug=True)
+"""
