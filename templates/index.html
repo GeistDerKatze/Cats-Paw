@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat's Paw</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <section class="box">
+            <div class="name"> Cat's Paw</div>
+            <form class="search_field" method="POST" action="{{ url_for('homepage')}}">
+                <input type="text" name="search" placeholder="search...">
+                <button type="submit">Download First Google Result as JSON</button>
+            </form>
+        </section>
+
+    </div>
+</body>
+</html>

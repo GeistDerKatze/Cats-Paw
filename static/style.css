@@ -1,0 +1,44 @@
+body {
+    background-color: #FFDAB3
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFDAB3;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C8AAAA;
+    width: 300px;             /* Make it wider */
+    height: 150px;            /* Make it taller */
+    border-radius: 20px;      /* Round the corners */
+    padding: 20px;            /* Optional: add space inside */
+    color: white;             /* Optional: improve text visibility */
+    font-size: 1.2rem;        /* Optional: scale text */
+}
+
+.name {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #574964
+}
+
+.search_field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Optional: space between input and button */
+}
+
+.search_field input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
